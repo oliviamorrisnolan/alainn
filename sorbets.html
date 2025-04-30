@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorbets Production - Álainn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0/dist/chartjs-plugin-annotation.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="brand">Álainn</div>
+
+    <!-- Container for Sorbet Chart and Buttons -->
+    <div class="chart-container">
+        <!-- Date Title -->
+        <h2>Sorbets Production - April 28, 2025</h2>
+        
+        <!-- Chart itself -->
+        <canvas id="sorbetChart"></canvas>
+
+        <!-- Action Buttons below the chart -->
+        <div id="button-group">
+            <a href="add_production.html" class="action-button">+ Add Production</a>
+            <a href="edit_target.html" class="action-button">✏️ Edit Target</a>
+            <a href="index.html" class="action-button">Main Menu</a> <!-- Main Menu Button -->
+            <a href="analytics.html" class="action-button">Analytics</a> <!-- New Analytics Button -->
+        </div>
+    </div>
+
+    <script src="sorbets.js"></script>
+
+</body>
+</html>

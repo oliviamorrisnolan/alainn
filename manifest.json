@@ -1,0 +1,22 @@
+{
+    "name": "Álainn Analytics",
+    "short_name": "Álainn",
+    "description": "View and manage production analytics",
+    "start_url": "/index.html",  
+    "background_color": "#f15c22",  
+    "display": "standalone",  
+    "theme_color": "#f15c22",  
+    "icons": [
+       {
+          "src": "/assets/icons/icon-192x192.png", 
+          "sizes": "192x192",
+          "type": "image/png"
+       },
+       {
+          "src": "/assets/icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+       }
+    ]
+ }
+ 

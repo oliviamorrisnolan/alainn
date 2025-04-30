@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analytics - Álainn</title>
+    <!-- Adding the link to Google Fonts for Pacifico -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your updated style.css file -->
+</head>
+<body>
+    <!-- Álainn Title -->
+    <div id="brand">Álainn</div>
+
+    <!-- Main Analytics Container -->
+    <div id="analytics-container">
+        <h2>Production Analytics</h2>
+        
+        <!-- Filter Section -->
+        <div id="filters">
+            <div>
+                <label for="start-date">Start Date:</label>
+                <input type="date" id="start-date" />
+            </div>
+            <div>
+                <label for="end-date">End Date:</label>
+                <input type="date" id="end-date" />
+            </div>
+            <div>
+                <label for="flavour">Select Flavour:</label>
+                <select id="flavour">
+                    <option value="all">All Flavours</option>
+                    <option value="acai">Acai</option>
+                    <option value="pitaya">Pitaya</option>
+                    <option value="mango">Mango</option>
+                    <option value="oceania">Oceania</option>
+                </select>
+            </div>
+            <button id="apply-filter">Apply Filter</button>
+        </div>
+
+        <!-- Chart Section -->
+        <div class="chart-container">
+            <canvas id="analyticsChart"></canvas>
+        </div>
+
+        <!-- Optional Button Group (for actions after analytics) -->
+        <!-- Optional Button Group (for actions after analytics) -->
+        <div id="button-group">
+            <a href="index.html" class="action-button">Main Menu</a> <!-- Link to index.html -->
+        </div>
+    </div>
+
+    <script src="analytics.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

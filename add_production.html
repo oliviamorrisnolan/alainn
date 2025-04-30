@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Production - Álainn</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="brand">Álainn</div>
+
+    <!-- Add Production Card -->
+    <div id="addProductionCard">
+        <h2>Add Production</h2>
+        
+        <form id="addProductionForm">
+            <div class="product-entry">
+                <label for="acai">Acai</label>
+                <button type="button" class="adjust-button" onclick="adjustQuantity('acai', -1)">-</button>
+                <input type="number" id="acai" value="0" min="0">
+                <button type="button" class="adjust-button" onclick="adjustQuantity('acai', 1)">+</button>
+            </div>
+
+            <div class="product-entry">
+                <label for="pitaya">Pitaya</label>
+                <button type="button" class="adjust-button" onclick="adjustQuantity('pitaya', -1)">-</button>
+                <input type="number" id="pitaya" value="0" min="0">
+                <button type="button" class="adjust-button" onclick="adjustQuantity('pitaya', 1)">+</button>
+            </div>
+
+            <div class="product-entry">
+                <label for="mango">Mango</label>
+                <button type="button" class="adjust-button" onclick="adjustQuantity('mango', -1)">-</button>
+                <input type="number" id="mango" value="0" min="0">
+                <button type="button" class="adjust-button" onclick="adjustQuantity('mango', 1)">+</button>
+            </div>
+
+            <div class="product-entry">
+                <label for="oceania">Oceania</label>
+                <button type="button" class="adjust-button" onclick="adjustQuantity('oceania', -1)">-</button>
+                <input type="number" id="oceania" value="0" min="0">
+                <button type="button" class="adjust-button" onclick="adjustQuantity('oceania', 1)">+</button>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="add_production.js"></script>
+    <a href="index.html" id="back-link">← Back to Main Menu</a>
+</body>
+</html>
